@@ -1,0 +1,159 @@
+body {
+  background-color: #21202b;
+}
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.radio__station {
+  width: 300px;
+  height: 500px;
+  background-color: #23232a;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 30px 40px -10px rgba(0, 0, 0, 0.7);
+}
+
+.station__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  background-color: #eeae61;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  color: white;
+}
+
+.left__arrow img,
+.power__icon img {
+  padding: 15px;
+  fill: white;
+  cursor: pointer;
+}
+
+.left__arrow img {
+  width: 15px;
+}
+.power__icon img {
+  width: 20px;
+}
+
+.station__list__box {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e2e3a !important;
+  border-bottom: 2px solid #363641;
+}
+
+.stations__list {
+  list-style: none;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  overflow-y: scroll;
+}
+
+.stations__list li {
+  width: 100%;
+  height: 100%;
+}
+
+.list {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: space-between;
+  border-bottom: 1px solid #363641;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.list__player__view {
+  height: 30% !important;
+}
+
+.list span {
+  font-size: 20px;
+  color: white;
+}
+
+.radio__player__hidden {
+  display: none;
+}
+.radio__player__visible {
+  display: block;
+  width: 100%;
+  height: 70%;
+  margin-bottom: 10px;
+}
+
+.radio__player {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.plus__icon,
+.minus__icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.plus__icon img,
+.minus__icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.preview__img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.bottom {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding-top: 20px;
+  background-color: #23232a;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.current__station {
+  color: #e6a95f !important;
+  font-size: 12px;
+  line-height: 2px;
+}
+.station__name {
+  font-size: 20px;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
